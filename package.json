@@ -1,0 +1,57 @@
+{
+  "name": "dsh-session-naming",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Proactive session naming for DeepSeek Harness: a session_title tool plus guidance that makes the agent rename its own session as soon as the task focus is clear.",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "scripts/check.mjs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "session-title"
+  ],
+  "author": "2389654770",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2389654770/dsh-session-naming.git"
+  },
+  "homepage": "https://github.com/2389654770/dsh-session-naming#readme",
+  "bugs": {
+    "url": "https://github.com/2389654770/dsh-session-naming/issues"
+  },
+  "icon": "./icon.svg",
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

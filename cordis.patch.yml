@@ -1,0 +1,16 @@
+# dsh-session-naming bundle 层：装配 session_title 工具 + 主动命名引导。
+# config 全部可选（插件不导出 Config schema，按原样读取并套默认值）：
+#   autoRename: 是否注入"按任务主动改名"的提示词引导（false = 只保留工具，手动调）
+#   prefix:     会话名统一前缀，如 '笔记：'（默认空）
+#   maxChars:   建议标题字数上限（默认 24）
+#   language:   引导文本语言，'zh' | 'en'（默认 zh）
+#   customRule: 追加的自定义命名约定（原样拼进引导末尾）
+- insert:
+    - id: dsh-session-naming
+      name: dsh-session-naming
+      config:
+        autoRename: true
+        prefix: ''
+        maxChars: 24
+        language: zh
+        customRule: ''

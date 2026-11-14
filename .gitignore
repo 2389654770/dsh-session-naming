@@ -1,0 +1,16 @@
+# dependencies / install output
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# runtime noise
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# editors
+.vscode/
+.idea/
+*.swp

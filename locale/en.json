@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session naming",
+    "description": "Gives the agent a session_title tool and naming rules so it renames its own session after the task at hand — in a note workspace, after the note it is editing."
+  }
+}

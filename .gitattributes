@@ -1,0 +1,5 @@
+# Keep the checkout byte-identical across Windows and CI.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.webp binary
